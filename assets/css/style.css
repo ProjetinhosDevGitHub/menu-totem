@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow-y: hidden;
+}
+
+html {
+  height: 700px;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+.header-logo {
+  border: 1px solid red;
+  background-color: black;
+}
+
+.header-logo img {
+  width: 200px;
+  height: 45px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.menu-buttons {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.btn {
+  display: block;
+  height: 100px;
+  background-color: rgb(32, 32, 136);
+  color: aqua;
+  font-size: 3rem;
+  border: 1px solid blue;
+  border-radius: 20px;
+
+  &:hover {
+    cursor: pointer;
+    
+  }
+
+  &:active {
+    background-color: rgb(31, 31, 180);
+  }
+}
+
+.seta-5 {
+  margin: 15px 0;
+  padding: 10px;
+  align-self: flex-end;
+  background: rgb(32, 32, 136);
+  border: 1px solid blue;
+  border-radius: 10px;
+  transition: all 0.2 linear;
+}
+
+.seta-5 i {
+  border-left: 15px solid #FFF;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  float: left;
+  margin: 0 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: cornflowerblue;
+}
