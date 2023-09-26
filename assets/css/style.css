@@ -6,6 +6,10 @@
   overflow-y: hidden;
 }
 
+.hide {
+  display: none;
+}
+
 html {
   height: 700px;
 }
@@ -14,33 +18,49 @@ body {
   background-color: rgb(230, 230, 230);
 }
 
-.header-logo {
-  border: 1px solid red;
-  background-color: black;
+.header {
+  display: flex;
+  background-color: rgb(25, 186, 207);
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  color: whitesmoke;
 }
 
-.header-logo img {
-  width: 200px;
-  height: 45px;
+.title {
+  font-size: 70px;
+}
+
+.subtitle {
+  font-size: 30px;
+  width: 350px;
+}
+
+.header-logo {
+  width: 300px;
+  
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 400px;
 }
 
 .menu-buttons {
-  width: 80%;
+  width: 70%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: auto auto;
 }
 
 .btn {
+  justify-self: center;
+  align-self: center;
   display: block;
-  height: 100px;
+  height: 80px;
+  width: 350px;
   background-color: rgb(32, 32, 136);
   color: aqua;
   font-size: 3rem;
@@ -57,18 +77,43 @@ main {
   }
 }
 
-.seta-5 {
+.prev-next-btn {
+  position: absolute;
+  top: 73%;
+  right: 8%;
+}
+
+.arrow {
   margin: 15px 0;
   padding: 10px;
   align-self: flex-end;
   background: rgb(32, 32, 136);
+  color: aqua;
+  font-size: 16px;
   border: 1px solid blue;
   border-radius: 10px;
   transition: all 0.2 linear;
+
+  &:hover {
+    cursor: pointer;
+    
+  }
+
+  &:active {
+    background-color: rgb(31, 31, 180);
+  }
 }
 
-.seta-5 i {
+.avançar {
   border-left: 15px solid #FFF;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  float: left;
+  margin: 0 10px;
+}
+
+.retornar {
+  border-right: 15px solid #FFF;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   float: left;
@@ -77,8 +122,22 @@ main {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 50px;
-  background-color: cornflowerblue;
+  background-color: rgb(0, 26, 75);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  color: white;
+}
+
+.timeDisplay {
+  font-weight: 700;
+}
+
+.credits {
+  font-size: larger;
+  font-style: italic;
 }

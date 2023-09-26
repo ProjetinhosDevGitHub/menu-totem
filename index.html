@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <script src="https://kit.fontawesome.com/f8c979c0bf.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
+<body onload="time()">
   <header>
-    <div class="header-logo">
-      <img src="assets/images/logo-faminas.png" alt="">
+    <div class="header">
+      <img class="header-logo" src="assets/images/logo-faminas.png" alt="">
+      <p class="title">Seja Bem Vindo!</p>
+      <p class="subtitle">Selecione uma opção para seu atendimento!</p>
     </div>
   </header>
 
@@ -26,12 +29,15 @@
       <button class="btn">Opção</button>
     </div>
 
-
-    <button class="seta-5"><i></i></button>
+    <div class="prev-next-btn">
+      <button class="arrow hide"><i class="avançar"></i>Avançar</button>
+      <button class="arrow"><i class="retornar"></i>Voltar</button>
+    </div>
+    
   </main>
 
 
-  <footer>Todos os direitos são reservados</footer>
+  <footer> <p class="credits">Educação levada a sério!</p> <p class="timeDisplay"></p> </footer>
 
   <script src="assets/js/scripts.js"></script>
 </body>
